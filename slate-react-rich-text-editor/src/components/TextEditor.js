@@ -1,9 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {Editor} from 'slate-react';
 import {Value} from 'slate';
 
 import BoldMark from './BoldMark';
 import ItalicMark from './ItalicMark';
+import FormatToolbar from './FormatToolbar';
+
+import Icon from 'react-icons-kit';
+import {bold} from 'react-icons-kit/feather/bold';
+import {italic} from 'react-icons-kit/feather/italic';
 
 const initialValue = Value.fromJSON({
     document: {
@@ -69,12 +74,22 @@ export default class TextEditor extends Component {
 
     render() {
         return (
-            <Editor 
-                value={this.state.value} 
-                onChange={this.onChange}
-                onKeyDown={this.onKeyDown}
-                renderMark={this.renderMark}
-            />
+            <Fragment>
+                <FormatToolbar>
+                    <button className='tooltip-icon-button'>
+                        <Icon icon={bold}/>
+                    </button>
+                    <button className='tooltip-icon-button'>
+                        <Icon icon={italic}/>
+                    </button>
+                </FormatToolbar>
+                <Editor 
+                    value={this.state.value} 
+                    onChange={this.onChange}
+                    onKeyDown={this.onKeyDown}
+                    renderMark={this.renderMark}
+                />
+            </Fragment>
         );
     }
 }
