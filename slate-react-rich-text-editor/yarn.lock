@@ -8641,6 +8641,11 @@ slate-dev-environment@^0.2.1:
   dependencies:
     is-in-browser "^1.1.3"
 
+slate-dev-warning@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/slate-dev-warning/-/slate-dev-warning-0.0.1.tgz#f6c36731babea5e301b5bd504fe64911dd24200a"
+  integrity sha512-QdXa+qmOG46VrTfnzn2gUVzs1WiO3Q+zCv3XomzMNGdgAJjCgHBs3jaeQD845h15loS3OJ181gCNAkB3dby6Hw==
+
 slate-hotkeys@^0.2.8:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/slate-hotkeys/-/slate-hotkeys-0.2.8.tgz#7fecf732c512c860113f3f1a6dc1015df9d130a7"
@@ -8686,18 +8691,17 @@ slate-react@^0.21.14:
     tiny-invariant "^1.0.1"
     tiny-warning "^0.0.3"
 
-slate@^0.44.8:
-  version "0.44.8"
-  resolved "https://registry.yarnpkg.com/slate/-/slate-0.44.8.tgz#cd39a4e238acf21d072be9b0b5a5220bc4bd5f4c"
-  integrity sha512-O7RMFsNiTxRxiVL6ndZplICQ9jK7wG8cJ9jZ0vYv5/RBir2RjH0tgRVSVvlgVEQv51h5vpmSQcrQ+GhEiWKX4g==
+slate@^0.41.8:
+  version "0.41.3"
+  resolved "https://registry.yarnpkg.com/slate/-/slate-0.41.3.tgz#fa468de5db53afc453a0a7d7875b4de05737a900"
+  integrity sha512-I/ymHWRxtoSOWYKh/SFgW3Vkkojt5ywWf7Wh4oBvaKic/3mAsM1wymyZmhnvSKK59IeE0JJzD4uyyQaM1KEFHA==
   dependencies:
     debug "^3.1.0"
     direction "^0.1.5"
     esrever "^0.2.0"
     is-plain-object "^2.0.4"
     lodash "^4.17.4"
-    tiny-invariant "^1.0.1"
-    tiny-warning "^0.0.3"
+    slate-dev-warning "^0.0.1"
     type-of "^2.0.1"
 
 slice-ansi@1.0.0:

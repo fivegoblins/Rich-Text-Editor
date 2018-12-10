@@ -8,7 +8,7 @@
     "react-dom": "^16.6.3",
     "react-icons-kit": "^1.2.1",
     "react-scripts": "2.1.1",
-    "slate": "^0.44.8",
+    "slate": "^0.41.8",
     "slate-react": "^0.21.14"
   },
   "scripts": {

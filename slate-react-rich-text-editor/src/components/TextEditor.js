@@ -72,14 +72,27 @@ export default class TextEditor extends Component {
         }
     }
 
+    onMarkClick = (event, type)=> {
+        event.preventDefault();
+        const value = this.state.value;
+        const change = value.change().toggleMark(type);
+        this.onChange(change);
+    }
+
     render() {
         return (
             <Fragment>
                 <FormatToolbar>
-                    <button className='tooltip-icon-button'>
+                    <button 
+                        className='tooltip-icon-button'
+                        onPointerDown={(event)=> this.onMarkClick(event, bold)}
+                    >
                         <Icon icon={bold}/>
                     </button>
-                    <button className='tooltip-icon-button'>
+                    <button 
+                        className='tooltip-icon-button'
+                        onPointerDown={(event)=> this.onMarkClick(event, italic)}
+                    >
                         <Icon icon={italic}/>
                     </button>
                 </FormatToolbar>
