@@ -43,7 +43,7 @@ export default class TextEditor extends Component {
 
         switch (event.key) {
             case 'b': {
-                change.addMark('bold')
+                change.toggleMark('bold')
                 return true
             }
         }
