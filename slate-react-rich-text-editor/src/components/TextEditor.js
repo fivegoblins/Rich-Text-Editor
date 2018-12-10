@@ -85,13 +85,13 @@ export default class TextEditor extends Component {
                 <FormatToolbar>
                     <button 
                         className='tooltip-icon-button'
-                        onPointerDown={(event)=> this.onMarkClick(event, bold)}
+                        onPointerDown={(event)=> this.onMarkClick(event, 'bold')}
                     >
                         <Icon icon={bold}/>
                     </button>
                     <button 
                         className='tooltip-icon-button'
-                        onPointerDown={(event)=> this.onMarkClick(event, italic)}
+                        onPointerDown={(event)=> this.onMarkClick(event, 'italic')}
                     >
                         <Icon icon={italic}/>
                     </button>
